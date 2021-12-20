@@ -2,6 +2,6 @@
 
 
 <h1> Funcionalidades </h1>
-[] Abrir e fechar um modal<br/>
-[] Quando pressionado o Enter fecha o modal<br/>
-[] Criado um botão para limpar o text da pagina principal<br/>
+[x] Abrir e fechar um modal<br/>
+[x] Quando pressionado o Enter fecha o modal<br/>
+[x] Criado um botão para limpar o texto da pagina principal<br/>
