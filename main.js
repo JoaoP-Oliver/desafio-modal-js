@@ -1,63 +1,25 @@
-const App = {
-  OpenModal() {
-    //Abrir Modal
+    this.modal = document.querySelector('.container')
 
-    const start = document.getElementById('start')
+    /* Open Modal*/
+    this.button = document.getElementById('button')
+    this.button.addEventListener('click',() => {
+      modal.classList.toggle('show')
 
-    start.addEventListener('click', () => {
-      const modal = document.getElementById('window')
-
-      modal.classList.remove("dark")
+      let user = document.getElementById('user')
+    const url = `https://api.github.com/users/${user.value}`
+       fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        let name = document.getElementById('name')
+        let imgPerfil = document.getElementById('img-perfil')
+        let bio = document.getElementById('bio')
+        name.innerText = data.login
+        imgPerfil.src = data.avatar_url
+      })
     })
-  },
 
-  CloseModal() {
-    //Fechar Modal e mandar o texto do textarea para a pagina principal
-
-    const close = document.getElementById('send')
-    close.addEventListener('click', () => {
-   
-   const modal = document.getElementById('window')
-   modal.classList.add("dark")
-
-   let txt = document.querySelector('textarea')
-   let res = document.getElementById('res')
-   res.innerHTML = `${txt.value}`
-})
-  },
-
-  ClearText() {
-    //Limpar texto da pagina principal
-
-    const clear = document.getElementById('clear')
-
-    clear.addEventListener('click', () => {
-    let res = document.getElementById('res')
-    res.innerHTML = ``
-})},
-
-  EnterKey() {
-    //Quando apertar Enter no teclado fecha o modal e manda o texto para a pagina inicial
-
-  document.addEventListener('keydown', (event) => {
-
-    const isEnterkey = event.key === "Enter"
-
-    if(isEnterkey) {
-
-      // App.CloseModal()
-      const modal = document.getElementById('window')
-      modal.classList.add("dark")
-
-      let txt = document.querySelector('textarea')
-      let res = document.getElementById('res')
-      res.innerHTML = `${txt.value}`
-    }
-  })
-}
-}
-
-App.OpenModal()
-App.CloseModal()
-App.ClearText()
-App.EnterKey()  
+    /* Close Modal*/
+    this.exitModal = document.getElementById('back')
+    this.exitModal.addEventListener('click', () => {
+      modal.classList.toggle('show')
+    })
