@@ -4,29 +4,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>desafio modal</title>
+  <title>Modal</title>
   <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-  <div class="container">
-    <div class="button" id="start">Começar</div>
-    <div class="button" id="clear">Apagar</div>
+  <div class="initial">
+    <input type="text" name="user" id="user" placeholder="Digite seu nome de usuario do github">
+  <div id="button">Perfil Github</div>
   </div>
 
-  <div id="res">...</div>
-
-  <div id="window" class="modal-overlay dark">
-    <div class="modal">
-      <p>Digite um comentario abaixo...</p>
-      <textarea name="txt" id="txt" cols="30" rows="10"></textarea>
-
-      <div class="first-close" id="send">
-        Enviar
-      </div>
+  <div class="container show">
+    <img src="" alt="Perfil-github" id="img-perfil">
+    <div class="text">
+      <div id="name"></div>
     </div>
+    <div id="back">Voltar</div>
   </div>
-</body>
-
+  
 <script src="main.js"></script>
+</body>
 </html>
