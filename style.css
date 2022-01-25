@@ -1,97 +1,96 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
 
-body {
-  background-color: #030b0c;
-  display: grid;
-  place-items: center;
-}
+      font-family:'Poppins' ,sans-serif;
+    }
 
-.container {
-  width: 400px;
-  height: 160px;
-  background: white;
+    body {
+      background: #ccc;
 
-  border-radius: 1.5rem;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-  display: grid;
-  place-items: center;
-  margin-top: 1rem;
-}
+    .initial {
+      width: 300px;
+      height: 180px;
+      background: white;
 
-.first-close {
-  height: 40px;
-  width: 110px;
-  background-color: black;
-  color: white;
+      display: grid;
+      place-items: center;
 
-  text-align: center;
-  font-size: 20px;
-  line-height: 40px;
+      border-radius: 1rem;
+    }
 
-  border-radius: 1rem;
-}
+    #user {
+      width: 250px;
+      height: 38px;
+      border-radius: 1rem;
 
-.button {
-  height: 40px;
-  width: 110px;
-  background-color: black;
-  color: white;
+      border: 2px purple solid;
+      padding: 4px;
+    }
 
-  text-align: center;
-  font-size: 20px;
-  line-height: 40px;
+    .container {
+      position: absolute;
+      z-index: 1;
 
-  border-radius: 1rem;
-  transition: 0.3s;
-}
+      width: min(70vw, 600px);
+      background: white;
+      padding: 10px;
+      
+      display: grid;
+      place-items: center;
+    }
 
-.button:hover {
-  cursor: pointer;
-  background: rgba(0, 0, 0, 0.637);
-}
+    img {
+      width: 400px;
+      height: 400px;
 
-.modal-overlay {
-  position: fixed;
-  bottom: 0;
+      margin-bottom: 10px;
+    }
 
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.384);
+    .text {
+      display: flex;
+      justify-content: space-between;
+    }
 
-  display: grid;
-  place-items: center;
-}
+    /*===========Buttons=============*/
+    #button {
+      width: 140px;
+      height: 40px;
+      background: #360442;
 
-.modal {
-  width: 600px;
-  height: 400px;
-  padding: 25px;
+      display: grid;
+      place-items: center;
 
-  background: white;
-}
+      color: white;
+      font-size: 20px;
+      border-radius: 1rem;
 
-textarea {
-  width: 550px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+      cursor: pointer;
+    }
 
-  padding: 15px;
-}
+    #back {
+      width: 140px;
+      height: 40px;
+      background: #000;
 
-.dark {
-  visibility: hidden;
-}
+      display: grid;
+      place-items: center;
+      margin-top: 10px;
 
-#res {
-  margin-top: 3rem;
-  color: white;
-  font-size: 25px;
+      color: white;
+      font-size: 20px;
+      border-radius: 1rem;
 
-  width: 400px;
-  text-align: center;
-}
+      cursor: pointer;
+    }
+
+    .show {
+      visibility: hidden;
+    }
