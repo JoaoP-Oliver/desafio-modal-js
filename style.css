@@ -16,8 +16,8 @@
     }
 
     .initial {
-      width: 300px;
-      height: 180px;
+      width: 18.75rem;
+      height: 11.25rem;
       background: white;
 
       display: grid;
@@ -27,8 +27,8 @@
     }
 
     #user {
-      width: 250px;
-      height: 38px;
+      width: 15.62rem;
+      height: 2.37rem;
       border-radius: 1rem;
 
       border: 2px purple solid;
@@ -48,8 +48,8 @@
     }
 
     img {
-      width: 400px;
-      height: 400px;
+      width: 25rem;
+      height: 25rem;
 
       margin-bottom: 10px;
     }
@@ -61,8 +61,8 @@
 
     /*===========Buttons=============*/
     #button {
-      width: 140px;
-      height: 40px;
+      width: 8.75rem;
+      height: 2.5rem;
       background: #360442;
 
       display: grid;
@@ -76,8 +76,8 @@
     }
 
     #back {
-      width: 140px;
-      height: 40px;
+      width: 8.75rem;
+      height: 2.5rem;
       background: #000;
 
       display: grid;
